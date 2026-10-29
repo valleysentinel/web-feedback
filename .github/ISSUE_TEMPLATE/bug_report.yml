@@ -1,0 +1,49 @@
+name: Report a problem
+description: Something on the website is not working the way it should.
+title: "[Problem] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for telling us. **This page is public**: anyone can read what you write here, and your GitHub username is shown. Please do not include private information.
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead? You can drag in a screenshot; please check it shows nothing private.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen? (optional)
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it happen? (optional)
+      description: The steps you took, if you remember them.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the website is this about?
+      options:
+        - News articles
+        - Calendar and events
+        - Submit an event
+        - Search
+        - Subscribe and newsletters
+        - Ads and sponsors
+        - Puzzles
+        - Obituaries and notices
+        - Something else
+  - type: input
+    id: page
+    attributes:
+      label: Page address (optional)
+      description: The web address of the page, if you have it.
+  - type: input
+    id: browser
+    attributes:
+      label: Your browser and device (optional)
+      description: For example "Safari on iPhone" or "Chrome on a Windows laptop".
