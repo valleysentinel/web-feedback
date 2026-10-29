@@ -1,0 +1,40 @@
+name: Suggest a feature
+description: Tell us what would make the Valley Sentinel website better.
+title: "[Idea] "
+labels: ["feature-request", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve the website. **This page is public**: anyone can read what you write here, and your GitHub username is shown. Please do not include private information such as an email address, phone number or home address.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the website to do?
+      description: Tell us in your own words, and what it would help you do.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the website is this about?
+      options:
+        - News articles
+        - Calendar and events
+        - Submit an event
+        - Search
+        - Subscribe and newsletters
+        - Ads and sponsors
+        - Puzzles
+        - Obituaries and notices
+        - Something else
+  - type: input
+    id: page
+    attributes:
+      label: Page address (optional)
+      description: The web address of the page, if you have it.
+  - type: input
+    id: browser
+    attributes:
+      label: Your browser and device (optional)
+      description: For example "Safari on iPhone" or "Chrome on a Windows laptop".
