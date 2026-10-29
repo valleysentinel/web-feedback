@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Not about the website? Contact the newsroom
+    url: https://valleysentinelnews.com/contact/
+    about: For news tips, corrections, advertising or subscriptions, please use the newspaper's contact page. This page is only for the Valley Sentinel website.
+  - name: About the Valley Sentinel app?
+    url: https://github.com/valleysentinel/app-feedback
+    about: Ideas, problems and questions about the phone app go there.
+  - name: A privacy or security concern about the website
+    url: https://github.com/valleysentinel/web-feedback/security/policy
+    about: Please email us instead of posting here, so nothing sensitive is public.
