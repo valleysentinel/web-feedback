@@ -1,0 +1,29 @@
+name: Ask a question
+description: Not sure how something works? Ask here.
+title: "[Question] "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This page is public**, and your GitHub username is shown. Please do not include private information.
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the website is this about?
+      options:
+        - News articles
+        - Calendar and events
+        - Submit an event
+        - Search
+        - Subscribe and newsletters
+        - Ads and sponsors
+        - Puzzles
+        - Obituaries and notices
+        - Something else
